@@ -1,0 +1,115 @@
+<html>
+<title>Text Repeater by Automontronic</title>
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="repeat.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Text Repeater by Automontronic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container pt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mt-5">Text Repeater</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="row mt-2">
+                        <div class="col-md-4">Text</div>
+                        <div class="col-md-8"><input id="repeatText" class="form-control" /></div>
+                    </div>
+                    <div class="row  mt-2">
+                        <div class="col-md-4">Color</div>
+                        <div class="col-md-8">
+                            <input id="repeatBackground" class="form-control" data-jscolor="{
+    preset: 'dark',
+    closeButton: true,
+    closeText: 'OK',
+    value:'#FFFFFF'
+    }" />
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4">Color</div>
+                        <div class="col-md-8">
+                            <input id="repeatColor" class="form-control" data-jscolor="{
+    preset: 'dark',
+    closeButton: true,
+    closeText: 'OK',
+    value:'#62c3bd'
+    }" />
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4">Angle</div>
+                        <div class="col-md-8">
+                            <span id="angleValue" class="sliderValue d-block"></span>
+                            <input id="repeatAngle" class="form-control mt-1" type="range" min="-359" max="359" />
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4">Vertical Spacing</div>
+                        <div class="col-md-8">
+                            <span id="verticalValue" class="sliderValue d-block"></span>
+                            <input id="repeatVerticalSpacing" class="form-control mt-1" type="range" min="1"
+                                max="100" />
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4">Word Spacing</div>
+                        <div class="col-md-8">
+                            <span id="spacingValue" class="sliderValue d-block"></span>
+                            <input id="repeatWordSpacing" class="form-control mt-1" type="range" min="1" max="100" />
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4">Word Size</div>
+                        <div class="col-md-8">
+                            <span id="wordValue" class="sliderValue d-block"></span>
+                            <input id="repeatWordSize" class="form-control mt-1" type="range" min="1" max="100" />
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-12 text-center"><a href="#" class="btn btn-primary" id="download" download="canvas-image.png">Download</a></div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <canvas id="repeatPreview" width="850" height="1100"></canvas>
+                    <canvas id="repeat" width="1700" height="2200" style="display:none;"></canvas>
+                </div>
+            </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted"></span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.5.2/jscolor.min.js"
+        integrity="sha512-qFhMEJrjI50TwLDGZ7Oi0ksTSWnFOqTNXhlqqUgWnE65S23rWUtQOv+tMNEybkMYSXKgAc3eg/SzkX+qrtJT/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="repeat.js"></script>
+
+</body>
+
+</html>
