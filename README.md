@@ -12,6 +12,6 @@ Can configure:
 
 There is a download button to download the generated image. 
 
-Demo available at https://automontronic.github.io/textrepeater/
+Demo available at https://automontronic.github.io/TextRepeater/
 
 ![image](https://github.com/user-attachments/assets/c635ab3e-a5b2-4c24-b733-56ae890f5bdf)
